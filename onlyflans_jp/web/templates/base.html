@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Título de la página{% endblock %}</title>
+</head>
+<body>
+    <header style="background-color: lightgray;">
+        <div>header</div>
+    </header>
+    <nav style="background-color: lightblue;">
+        <div>navbar</div>
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer style="background-color: lightgreen;">
+        <div>footer</div>
+    </footer>
+</body>
+</html>
