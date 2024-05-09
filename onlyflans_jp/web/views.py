@@ -8,3 +8,5 @@ def about(request):
 
 def welcome(request):
     return render(request, 'welcome.html', {'texto': 'Bienvenido cliente'})
+
+#seccion llamada indice 
