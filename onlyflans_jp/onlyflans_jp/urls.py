@@ -17,11 +17,11 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from web.views import indice, acerca, bienvenido # Importa las vistas de la  app "web"
+from web.views import index, about, welcome # Importa las vistas de la  app "web"
 
 urlpatterns = [
     path('admin/', admin.site.urls),  # ruta del administrador de Django
-    path('', views.index, name='index'),  # ruta para la página de inicio
-    path('acerca/', views.about, name='about'),  # ruta para la página acerca
-    path('bienvenido/', views.welcome, name='welcome'),  # ruta para la página de bienvenida
+    path('', index, name='index'),  # ruta para la página de inicio
+    path('acerca/', about, name='about'),  # ruta para la página acerca
+    path('bienvenido/', welcome, name='welcome'),  # ruta para la página de bienvenida
 ]
