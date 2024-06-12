@@ -1,12 +1,26 @@
+# web/views.py
+
+
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'index.html', {'texto': 'Índice'}) #recuerda que lleva tilde debe estar asi en las otras carpetas
+    return render(request, 'web/base.html')
 
 def about(request):
-    return render(request, 'about.html', {'texto': 'Acerca'})
+    return render(request, 'web/about.html')
 
 def welcome(request):
-    return render(request, 'welcome.html', {'texto': 'Bienvenido cliente'})
+    return render(request, 'web/welcome.html')
+
+
+#def index(request):
+    #return render(request, 'web/index.html')
+
+#def about(request):
+    #return render(request, 'web/about.html')
+
+#def welcome(request):
+    #return render(request, 'web/welcome.html')
 
 #seccion llamada indice 
+

@@ -19,6 +19,7 @@ from django.contrib import admin
 from django.urls import path
 from web.views import index, about, welcome # Importa las vistas de la  app "web"
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),  # ruta del administrador de Django
     path('', index, name='index'),  # ruta para la página de inicio

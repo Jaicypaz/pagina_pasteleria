@@ -1,0 +1,33 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <content id="acerca_de">
+        <div class="container p-3">
+            <div class="row">
+                <!--primera columna-->
+                <div class="col-md-6">
+                <h2>Nuestro Historia</h2><hr>
+                <img src="{% static 'img/acerca1.jpg'%}" class="img-fluid" alt="acerca_1">
+                <p> OnlyFlans es una empresa enfocada en el mundo de la 
+                    pastelería y los postres, en especial en la venta de flan(de ahí 
+                    su nombre), nace en 2021 en santiago de chile como una 
+                    empresa familiar que pretende entregar productos de calidad 
+                    a su clientela, estando ubicada en providencia, a pasos del 
+                    metro Parque Bustamante</p>
+                <p> Visitanos y desgusta del mejor flan</p>
+
+                <!--segunda columna-->
+                <div class="col-md-6">
+                <h2>Nuestro Equipo</h2><hr>
+                 <img src="{% static 'img/acerca2.jpg'%}" class="img-fluid" alt="acerca_2">
+                <p> Esta compuesto por personas con conocimientos amplios en pasteleria y postres que entregar 
+                    lo mejor de sus conocimientos para elaborar exquisitos postres y flanes que seran inolvidables para su paladar</p>
+                <p> Ven y pruebalo tu mismo</p>
+                </div>
+            </div>
+        </div>
+    </content>
+</div>
+{% endblock %}
